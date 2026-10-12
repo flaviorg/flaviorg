@@ -21,15 +21,20 @@
 
 ## 👋 About me
 
-I'm a **Senior Full-Stack Engineer** with **8+ years** building web and mobile products for
-companies in the US and Brazil — today at **[TED](https://www.ted.com)**, working on TED.com and
-the TED app. I also build **AI engineering** projects: agents that know when *not* to act,
-MCP servers you can actually trust, and Claude Code workflows that ship real artifacts.
+I'm a **Senior Full-Stack Engineer** with **9+ years** building web and mobile products for
+companies in the US and Brazil — today at **[TED Conferences](https://www.ted.com)**, on the
+front end of TED.com (**20M+ monthly visitors**) and the TED app in React Native
+(**30M+ downloads** on Android alone). I also build **AI engineering** projects: agents that know
+when *not* to act, MCP servers you can actually trust, and Claude Code workflows that ship real
+artifacts.
 
-- 🎤 **TED** — TED.com and the TED mobile app (React Native)
-- 🧠 **AI engineering** — multi-agent systems, MCP servers, RAG with refusals, guardrails and eval gates in CI
+- 🎤 **TED** — TED.com in Next.js, React, GraphQL and Tailwind, delivering 3,000+ talks with subtitles in 100+ languages; the TED app in React Native
+- 📱 **Shipped to both stores** — RadStar Alpha Series and Melanin Medical Specialties, iOS + Android from one React Native codebase
+- ✅ **I own the quality of what I ship** — Playwright and Jest testing, New Relic, Bugsnag and Embrace observability, WCAG 2.1 AA accessibility
+- 🧠 **AI engineering** — multi-agent systems, MCP servers, RAG with refusals and eval gates in CI; spec-driven and test-driven work with AI coding agents, with human review as the quality gate
 - 🎬 **Video with code** — Claude Code skills that edit talking-head takes and produce motion graphics
-- 🌍 Remote from **Braga, Portugal** · 🎓 B.Sc. in Information Systems
+- 🌍 Remote from **Portugal** (EU work authorization) · EU/US time-zone overlap · 5+ years with distributed US teams
+- 🎓 B.Sc. in Information Systems (UFSC) · 🗣️ Portuguese (native), English (C1)
 - 💼 **Open to freelance projects** → [oflavio.dev](https://oflavio.dev)
 
 ## 🚀 Featured projects
@@ -96,38 +101,48 @@ MCP servers you can actually trust, and Claude Code workflows that ship real art
 
 <table>
   <tr>
-    <td><b>Web &amp; Mobile</b></td>
-    <td><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs" alt="TypeScript, JavaScript, React / React Native, Next.js"/>&nbsp;<img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="28"/> <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" height="28"/></td>
+    <td><b>Frontend</b></td>
+    <td><img src="assets/stack/frontend.svg" height="44" alt="TypeScript, JavaScript, React, Next.js, Tailwind CSS, HTML, CSS, Figma" title="TypeScript, JavaScript, React, Next.js, Tailwind CSS, HTML, CSS, Figma"/></td>
+  </tr>
+  <tr>
+    <td><b>Mobile</b></td>
+    <td><img src="assets/stack/mobile.svg" height="44" alt="React Native, Expo, iOS, Android" title="React Native, Expo, iOS, Android"/></td>
   </tr>
   <tr>
     <td><b>Backend</b></td>
-    <td><img src="https://skillicons.dev/icons?i=nodejs,nestjs" alt="Node.js, NestJS"/>&nbsp;<img src="https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white" height="28"/></td>
+    <td><img src="assets/stack/backend.svg" height="44" alt="Node.js, NestJS, Fastify, Express" title="Node.js, NestJS, Fastify, Express"/></td>
+  </tr>
+  <tr>
+    <td><b>Databases</b></td>
+    <td><img src="assets/stack/databases.svg" height="44" alt="PostgreSQL, MySQL, Oracle, MongoDB, Firebase" title="PostgreSQL, MySQL, Oracle, MongoDB, Firebase"/></td>
   </tr>
   <tr>
     <td><b>ORMs</b></td>
-    <td><img src="https://skillicons.dev/icons?i=prisma" alt="Prisma"/>&nbsp;<img src="https://img.shields.io/badge/TypeORM-FE0803?style=for-the-badge&logo=typeorm&logoColor=white" height="28"/></td>
+    <td><img src="assets/stack/orms.svg" height="44" alt="Prisma, TypeORM" title="Prisma, TypeORM"/></td>
   </tr>
   <tr>
-    <td><b>APIs &amp; Data</b></td>
-    <td><img src="https://skillicons.dev/icons?i=graphql,postgres,mongodb" alt="GraphQL, PostgreSQL, MongoDB"/>&nbsp;<img src="https://img.shields.io/badge/REST_APIs-FF6C37?style=for-the-badge&logo=postman&logoColor=white" height="28"/></td>
+    <td><b>APIs &amp; CMS</b></td>
+    <td><img src="assets/stack/apis-cms.svg" height="44" alt="GraphQL, REST (Postman), Prismic, Algolia" title="GraphQL, REST (Postman), Prismic, Algolia"/></td>
+  </tr>
+  <tr>
+    <td><b>Quality &amp; Observability</b></td>
+    <td><img src="assets/stack/quality.svg" height="44" alt="Jest, Playwright, New Relic, Bugsnag, Embrace" title="Jest, Playwright, New Relic, Bugsnag, Embrace"/></td>
   </tr>
   <tr>
     <td><b>Cloud &amp; DevOps</b></td>
-    <td><img src="https://skillicons.dev/icons?i=aws,docker,git,githubactions" alt="AWS, Docker, Git, GitHub Actions"/></td>
+    <td><img src="assets/stack/devops.svg" height="44" alt="AWS, Docker, Git, GitHub Actions" title="AWS, Docker, Git, GitHub Actions"/></td>
   </tr>
   <tr>
     <td><b>AI Engineering</b></td>
-    <td><img src="https://skillicons.dev/icons?i=python" alt="Python"/>&nbsp;<img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white" height="28"/> <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="28"/> <img src="https://img.shields.io/badge/RAG_%26_Evals-818CF8?style=for-the-badge" height="28"/></td>
+    <td><img src="assets/stack/ai-engineering.svg" height="44" alt="Python, Model Context Protocol (MCP), LangChain / LangGraph" title="Python, Model Context Protocol (MCP), LangChain / LangGraph"/></td>
   </tr>
   <tr>
     <td><b>AI Coding</b></td>
-    <td><img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white" height="28"/> <img src="https://img.shields.io/badge/OpenAI_Codex-000000?style=for-the-badge" height="28"/> <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" height="28"/> <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" height="28"/></td>
-  </tr>
-  <tr>
-    <td><b>Tools</b></td>
-    <td><img src="https://skillicons.dev/icons?i=figma,jest" alt="Figma, Jest"/>&nbsp;<img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge" height="28"/></td>
+    <td><img src="assets/stack/ai-coding.svg" height="44" alt="Claude Code, OpenAI Codex, Cursor, Google Antigravity" title="Claude Code, OpenAI Codex, Cursor, Google Antigravity"/></td>
   </tr>
 </table>
+
+<sub>Icons: <a href="https://github.com/syvixor/skills-icons">Syvixor Skills Icons</a> (MIT); Embrace tile drawn in the same style from Embrace's logo.</sub>
 
 ## 🤝 Let's connect
 
