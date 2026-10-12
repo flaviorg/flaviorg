@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flavio Gouveia — profile banner</title>
+<!-- Made with motion-studio (engine=code). Rendered at 1920x1080; the banner is the 1920x600 band, cropped by ffmpeg. -->
+<style>
+  @font-face { font-family: "Space Grotesk"; src: url("SpaceGrotesk-latin.woff2") format("woff2"); font-weight: 300 700; font-display: block; }
+  :root { --bg: #0b1020; --ink: #eef2ff; --muted: #8b93b5; --a: #38bdf8; --b: #818cf8; }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); color: var(--ink); font-family: "Space Grotesk", sans-serif; }
+  #band { position: absolute; left: 0; top: 240px; width: 1920px; height: 600px; overflow: hidden; }
+  #grid { position: absolute; inset: -60px; background-image: radial-gradient(rgba(139,147,181,0.22) 1.6px, transparent 1.6px); background-size: 40px 40px; }
+  #glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; background: radial-gradient(circle, rgba(129,140,248,0.30), rgba(56,189,248,0.10) 45%, transparent 70%); }
+  .mask { position: absolute; overflow: hidden; }
+  .mask > * { display: block; will-change: transform; }
+  #eyebrow { left: 120px; top: 96px; font-size: 26px; letter-spacing: 0.32em; color: var(--muted); font-weight: 500; }
+  #eyebrow i { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: var(--a); margin-right: 16px; vertical-align: 2px; }
+  #name { left: 112px; top: 140px; line-height: 1; padding-bottom: 14px; }
+  #name span { font-size: 150px; font-weight: 700; letter-spacing: -0.045em; white-space: nowrap; }
+  #name b { font-weight: 700; background: linear-gradient(90deg, var(--a), var(--b)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  #role { left: 120px; top: 318px; }
+  #role span { font-size: 52px; font-weight: 500; letter-spacing: -0.02em; white-space: nowrap; }
+  #rule { position: absolute; left: 120px; top: 410px; width: 880px; height: 4px; background: linear-gradient(90deg, var(--a), var(--b)); transform-origin: 0 50%; }
+  #stack { left: 120px; top: 436px; }
+  #stack span { font-size: 30px; color: var(--muted); white-space: nowrap; letter-spacing: 0.01em; }
+  #card { position: absolute; left: 1250px; top: 150px; width: 560px; height: 300px; border-radius: 28px; padding: 2px; background: linear-gradient(135deg, var(--a), var(--b)); box-sizing: border-box; }
+  #card-in { position: absolute; inset: 2px; border-radius: 26px; background: rgba(11,16,32,0.92); overflow: hidden; }
+  #card-label { position: absolute; left: 44px; top: 38px; font-size: 22px; letter-spacing: 0.3em; color: var(--muted); }
+  .chip { position: absolute; left: 44px; top: 96px; width: 480px; }
+  .chip b { display: block; text-wrap: balance; font-size: 46px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.02; }
+  .chip small { display: block; margin-top: 14px; font-size: 26px; color: var(--muted); }
+  #wipe { position: absolute; inset: 0; background: linear-gradient(90deg, var(--a), var(--b)); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="band">
+    <div id="grid"></div>
+    <div id="glow"></div>
+    <div class="mask" id="eyebrow"><span><i></i>HELLO, I'M</span></div>
+    <div class="mask" id="name"><span>Flavio <b>Gouveia</b></span></div>
+    <div class="mask" id="role"><span>Senior Full-Stack &amp; AI Engineer</span></div>
+    <div id="rule"></div>
+    <div class="mask" id="stack"><span>React Native · Next.js · TypeScript · Node.js · Claude Code</span></div>
+    <div id="card">
+      <div id="card-in">
+        <div id="card-label">NOW</div>
+        <div class="chip" id="chip-0"><b>Shipping TED.com &amp; the TED app</b><small>Web &amp; mobile · React Native</small></div>
+        <div class="chip" id="chip-1"><b>Building AI agents &amp; MCP servers</b><small>LangGraph · RAG · guardrails</small></div>
+        <div class="chip" id="chip-2"><b>Making video with code</b><small>Claude Code skills · motion-studio</small></div>
+      </div>
+    </div>
+    <div id="wipe"></div>
+  </div>
+</div>
+
+<script type="module">
+import { prog, ease, spring, clamp, lerp } from './kit.js';
+
+const DURATION = 7.2;
+window.MOTION = { width: 1920, height: 1080, fps: 30, duration: DURATION, ready: document.fonts.ready };
+const $ = s => document.querySelector(s);
+const inner = id => $(id).firstElementChild;
+const CHIPS = [0, 1, 2].map(i => $('#chip-' + i));
+const CHIP_T = [1.2, 3.1, 5.0];          // each chip lands, holds ~1.6 s, leaves
+
+// The GIF starts mid-loop (everything on screen), so its first frame — the one shown to people with
+// reduced motion enabled — is the full banner, never the empty loop point.
+const START = 2.4;
+window.seek = (t0) => {
+  const t = (t0 + START) % DURATION;
+  // Background: static dot grid and glow.
+  // (kept static on purpose: a moving background makes every GIF frame change and bloats the file)
+  $('#glow').style.transform = `translate(1080px, -260px)`;
+
+  // Entrances through masks, staggered.
+  const rise = (id, start, dur = 0.6) => {
+    const p = prog(t, start, dur, ease.outExpo);
+    inner(id).style.transform = `translateY(${(1 - p) * 110}%)`;
+  };
+  rise('#eyebrow', 0.05, 0.5);
+  rise('#name', 0.15, 0.75);
+  rise('#role', 0.45);
+  rise('#stack', 0.75);
+  $('#rule').style.transform = `scaleX(${prog(t, 0.55, 0.8, ease.inOutExpo)})`;
+  
+
+  // Card springs in, then the chips rotate on a fixed rhythm.
+  const cs = spring(t - 0.6, { stiffness: 160, damping: 15 });
+  $('#card').style.opacity = cs > 0.001 ? 1 : 0;
+  $('#card').style.transform = `translateY(${(1 - cs) * 120}px) rotate(${(1 - cs) * 3}deg)`;
+  CHIPS.forEach((c, i) => {
+    const inP = prog(t, CHIP_T[i], 0.55, ease.outExpo);
+    const outP = i < 2 ? prog(t, CHIP_T[i + 1] - 0.3, 0.35, ease.inCubic) : 0;
+    c.style.transform = `translateY(${(1 - inP) * 70 - outP * 70}px)`;
+    c.style.opacity = clamp(inP * 1.4) * (1 - outP);
+    c.style.filter = inP > 0.02 && inP < 0.95 ? `blur(${(1 - inP) * 5}px)` : 'none';
+  });
+
+  // Loop: a gradient wipe sweeps across and leaves an empty frame, which matches frame 0.
+  const wIn = prog(t, 6.55, 0.3, ease.inOutExpo), wOut = prog(t, 6.85, 0.3, ease.inOutExpo);
+  $('#wipe').style.clipPath = `inset(0 ${(1 - wIn) * 100}% 0 ${wOut * 100}%)`;
+  const hide = t >= 6.85;
+  for (const id of ['#eyebrow', '#name', '#role', '#stack', '#rule', '#card']) $(id).style.visibility = hide ? 'hidden' : 'visible';
+};
+
+window.seek(0);
+</script>
+</body>
+</html>
