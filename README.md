@@ -60,7 +60,4 @@
 
 <a href="https://oflavio.dev"><picture><source media="(prefers-color-scheme: light)" srcset="assets/v2/section-contact-light.png"><img src="assets/v2/section-contact.png" alt="contact: oflavio.dev · linkedin.com/in/flaviorgdev · flaviorgouveia@gmail.com · open to freelance projects" width="100%"></picture></a>
 
-**Contact.** [oflavio.dev](https://oflavio.dev) · [LinkedIn](https://www.linkedin.com/in/flaviorgdev) · [Instagram](https://www.instagram.com/oflavio.dev) · [flaviorgouveia@gmail.com](mailto:flaviorgouveia@gmail.com) · open to freelance projects.
-
-
 <p align="center"><sub>Every image on this page was drawn by code, in the style of my Claude Code mods. The mascots are crew's own.</sub></p>
