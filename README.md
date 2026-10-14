@@ -19,7 +19,7 @@
 
 ### Claude Code mods
 
-Mods for Claude Code, written from scratch against the official mods API.
+Mods for Claude Code, written from scratch against the official mods API. All of them install from one marketplace: [**claude-mods**](https://github.com/flaviorg/claude-mods).
 
 <table>
   <tr>
