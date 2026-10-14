@@ -12,7 +12,7 @@ const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 800, height: 1400 }, deviceScaleFactor: 2 })
 await page.goto(pathToFileURL(resolve(here, 'badges.html')).href + Q)
 await page.evaluate(() => document.fonts.ready)
-for (const id of ['website', 'linkedin', 'email', 'freelance', 'repo-tripwire', 'repo-canopy', 'repo-crew', 'repo-claude-mods', 'repo-incident-copilot', 'repo-agent-flight-recorder', 'repo-legacy-archaeologist', 'repo-secure-legacy-mcp', 'repo-docs-data-assistant', 'repo-maestri-squad', 'repo-motion-studio', 'repo-reelforge']) {
+for (const id of ['website', 'linkedin', 'email', 'freelance', 'repo-tripwire', 'repo-canopy', 'repo-crew', 'repo-claude-mods', 'repo-incident-copilot', 'repo-agent-flight-recorder', 'repo-legacy-archaeologist', 'repo-secure-legacy-mcp', 'repo-docs-data-assistant', 'repo-a11y-fixgate', 'repo-privacy-radar', 'repo-maestri-squad', 'repo-motion-studio', 'repo-reelforge']) {
   await page.locator('#' + id).screenshot({ path: resolve(here, `badge-${id}${SUF}.png`), omitBackground: true })
   console.log(`badge-${id}${SUF}.png`)
 }
