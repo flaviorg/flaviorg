@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="28" viewBox="0 0 111 28" role="img" aria-label="LinkedIn">
+  <!-- Glyph: Feather Icons (MIT License, https://github.com/feathericons/feather) -->
+  <title>LinkedIn</title>
+  <rect width="111" height="28" fill="#0284C7"/>
+  <g transform="translate(9 7) scale(0.5833333)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+  </g>
+  <text x="65.5" y="17.5" fill="#FFFFFF" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" text-anchor="middle" textLength="67" lengthAdjust="spacing" text-rendering="geometricPrecision">LINKEDIN</text>
+</svg>

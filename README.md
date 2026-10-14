@@ -2,11 +2,9 @@
 
 <img src="assets/banner.gif" alt="Flavio Gouveia — Senior Full-Stack & AI Engineer" width="100%"/>
 
-<sub>This banner was made with <a href="https://github.com/flaviorg/motion-studio">motion-studio</a>, my Claude Code skill — every frame written in code.</sub>
+**Senior Full-Stack & AI Engineer** &nbsp;·&nbsp; TED.com and the TED app &nbsp;·&nbsp; Braga, Portugal<br/>**Open to freelance projects**
 
-**Senior Full-Stack & AI Engineer** &nbsp;·&nbsp; TED.com and the TED app &nbsp;·&nbsp; Braga, Portugal
-
-[![oflavio.dev](https://img.shields.io/badge/oflavio.dev-0284C7?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNMiAxMmgyMCIvPjxwYXRoIGQ9Ik0xMiAyYTE1LjMgMTUuMyAwIDAgMSA0IDEwIDE1LjMgMTUuMyAwIDAgMS00IDEwIDE1LjMgMTUuMyAwIDAgMS00LTEwIDE1LjMgMTUuMyAwIDAgMSA0LTEweiIvPjwvc3ZnPg%3D%3D)](https://oflavio.dev) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0284C7?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/flaviorgdev) [![Email](https://img.shields.io/badge/Email-0284C7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:flaviorgouveia@gmail.com)
+<a href="https://oflavio.dev"><img src="assets/buttons/website.svg" height="28" alt="oflavio.dev"/></a>&nbsp;<a href="https://www.linkedin.com/in/flaviorgdev"><img src="assets/buttons/linkedin.svg" height="28" alt="LinkedIn"/></a>&nbsp;<a href="mailto:flaviorgouveia@gmail.com"><img src="assets/buttons/email.svg" height="28" alt="Email"/></a>
 
 </div>
 
@@ -14,7 +12,7 @@
 
 - **TED** — I work on the front end of [TED.com](https://www.ted.com) (20M+ monthly visitors) and on the TED app in React Native (30M+ downloads on Android alone).
 - **9+ years** building web and mobile products for companies in the US and Brazil.
-- **AI engineering** — agents, MCP servers, RAG with eval gates in CI, and tooling for Claude Code.
+- **AI engineering** — agents, MCP servers, RAG with eval gates in CI, and Claude Code mods ([tripwire](https://github.com/flaviorg/tripwire), [canopy](https://github.com/flaviorg/canopy), [crew](https://github.com/flaviorg/crew)).
 - Remote from **Portugal** and **open to freelance projects** → [oflavio.dev](https://oflavio.dev)
 
 ## Open source
@@ -43,20 +41,18 @@ Mods for Claude Code, written from scratch against the official mods API.
 
 ### Video with Claude Code
 
+<a href="https://github.com/flaviorg/motion-studio"><img src="https://github.com/flaviorg/motion-studio/raw/main/docs/media/demo-code-16x9.gif" alt="motion-studio demo" width="100%"/></a>
+
 <table>
   <tr>
-    <td width="50%" valign="top"><a href="https://github.com/flaviorg/motion-studio"><img src="https://github.com/flaviorg/motion-studio/raw/main/docs/media/demo-code-16x9.gif" alt="motion-studio demo" width="100%"/></a></td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/flaviorg/motion-studio"><b>motion-studio</b></a><br/>
-      A Claude Code plugin that turns a one-line brief into a finished motion-graphics MP4: real brand capture, a beat-grid plan, a soundtrack synthesized in code and a scored critique loop.
-      <br/><br/>
-      <a href="https://github.com/flaviorg/reelforge"><b>reelforge</b></a><br/>
-      Claude Code skills that turn a raw talking-head take into a tight, branded short-form video: dead air and retakes cut, word-synced cards and captions.
-    </td>
+    <td><a href="https://github.com/flaviorg/motion-studio"><b>motion-studio</b></a><br/>A Claude Code plugin that turns a one-line brief into a finished motion-graphics MP4: real brand capture, a beat-grid plan, a soundtrack synthesized in code and a scored critique loop. The banner at the top of this page was made with it, every frame written in code.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/flaviorg/reelforge"><b>reelforge</b></a><br/>Claude Code skills that turn a raw talking-head take into a tight, branded short-form video: dead air and retakes cut, word-synced cards and captions.</td>
   </tr>
 </table>
 
-## AI engineering
+### AI engineering
 
 <table>
   <tr>
@@ -85,7 +81,7 @@ Mods for Claude Code, written from scratch against the official mods API.
   </tr>
   <tr>
     <td valign="top"><a href="https://github.com/flaviorg/maestri-squad"><b>maestri-squad</b></a></td>
-    <td valign="top">One Markdown file that turns your Maestri Maestro into the lead of a multi-agent software squad.</td>
+    <td valign="top">One Markdown file that turns the lead agent of your Maestri workspace (a macOS app for AI agents) into the head of a multi-agent software squad.</td>
   </tr>
 </table>
 
@@ -101,12 +97,12 @@ Mods for Claude Code, written from scratch against the official mods API.
     <td valign="top"><b>Databases &amp; ORMs</b><br/><img src="assets/stack/databases-sql.svg" height="32" alt="PostgreSQL, MySQL, Oracle" title="PostgreSQL, MySQL, Oracle"/> <img src="assets/stack/databases-nosql.svg" height="32" alt="MongoDB, Firebase" title="MongoDB, Firebase"/> <img src="assets/stack/orms.svg" height="32" alt="Prisma, TypeORM" title="Prisma, TypeORM"/></td>
   </tr>
   <tr>
-    <td valign="top"><b>Quality &amp; Observability</b><br/><img src="assets/stack/testing.svg" height="32" alt="Jest, Playwright" title="Jest, Playwright"/> <img src="assets/stack/observability.svg" height="32" alt="New Relic, Bugsnag, Embrace" title="New Relic, Bugsnag, Embrace"/></td>
+    <td valign="top"><b>Quality &amp; observability</b><br/><img src="assets/stack/testing.svg" height="32" alt="Jest, Playwright" title="Jest, Playwright"/> <img src="assets/stack/observability.svg" height="32" alt="New Relic, Bugsnag, Embrace" title="New Relic, Bugsnag, Embrace"/></td>
     <td valign="top"><b>Cloud &amp; DevOps</b><br/><img src="assets/stack/devops.svg" height="32" alt="AWS, Docker, Git, GitHub Actions" title="AWS, Docker, Git, GitHub Actions"/></td>
   </tr>
   <tr>
-    <td valign="top"><b>AI Engineering</b><br/><img src="assets/stack/ai-engineering.svg" height="32" alt="Python, Model Context Protocol (MCP), LangChain / LangGraph" title="Python, Model Context Protocol (MCP), LangChain / LangGraph"/></td>
-    <td valign="top"><b>AI Coding</b><br/><img src="assets/stack/ai-coding.svg" height="32" alt="Claude Code, OpenAI Codex, Cursor, Google Antigravity" title="Claude Code, OpenAI Codex, Cursor, Google Antigravity"/></td>
+    <td valign="top"><b>AI engineering</b><br/><img src="assets/stack/ai-engineering.svg" height="32" alt="Python, Model Context Protocol (MCP), LangChain / LangGraph" title="Python, Model Context Protocol (MCP), LangChain / LangGraph"/></td>
+    <td valign="top"><b>AI coding</b><br/><img src="assets/stack/ai-coding.svg" height="32" alt="Claude Code, OpenAI Codex, Cursor, Google Antigravity" title="Claude Code, OpenAI Codex, Cursor, Google Antigravity"/></td>
   </tr>
 </table>
 
@@ -114,4 +110,4 @@ Mods for Claude Code, written from scratch against the official mods API.
 
 ---
 
-<p align="center">Open to freelance projects → <a href="https://oflavio.dev">oflavio.dev</a> &nbsp;·&nbsp; <a href="mailto:flaviorgouveia@gmail.com">flaviorgouveia@gmail.com</a></p>
+<p align="center">Open to freelance projects → <a href="https://oflavio.dev">oflavio.dev</a><br/><a href="mailto:flaviorgouveia@gmail.com">flaviorgouveia@gmail.com</a></p>
