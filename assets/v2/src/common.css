@@ -1,0 +1,23 @@
+@font-face { font-family: "SFMono"; src: local("SF Mono"), url("file:///System/Library/Fonts/SFNSMono.ttf") format("truetype"); font-weight: 100 900; }
+:root {
+  --bg: #0d0d0f; --card: #121215; --card2: #151519; --line: #26262c; --line2: #1e1e23;
+  --text: #ebe5d8; --dim: #8a867f; --dimmer: #5c5a57;
+  --coral: #D97757; --teal: #35B5AC; --violet: #9B7BEA; --gold: #E9B248; --ok: #5fb36b;
+  /* former hard-coded colours (common-light.css overrides them) */
+  --chip-line: #34343a; --chip-text: #c9c4ba; --bar-track: #24242a; --guide: #3a3a42; --ver-line: rgba(95,179,107,.45);
+  --tripwire: #E53935; --canopy: #49A665; --crew: #9B7BEA; --sh-bg: #4a4a52; --sh-fg: #e6e6e6; --sh2-bg: #5c5a57; --sh2-fg: #ebe5d8;
+  --grid: rgba(255,255,255,.028);
+  --mono: "SFMono", "JetBrains Mono", Menlo, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); }
+body { font-family: var(--mono); color: var(--text); -webkit-font-smoothing: antialiased; }
+.grid-bg {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 32px 32px; background-position: -1px -1px;
+}
+.sprite svg { display: block; width: 100%; height: 100%; image-rendering: pixelated; shape-rendering: crispEdges; }
+.dia { display: inline-block; font-size: 1.05em; line-height: 1; transform: translateY(-.04em); }

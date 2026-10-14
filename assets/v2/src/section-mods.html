@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>flaviorg mods</title>
+<link rel="stylesheet" href="common.css"><script>/[?&]theme=light\b/.test(location.search)&&document.write('<link rel="stylesheet" href="common-light.css">')</script><link rel="stylesheet" href="sections.css">
+<style>
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 14px; }
+  .mod { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 24px 26px 22px 22px;
+         display: grid; grid-template-columns: 72px 1fr; column-gap: 20px; }
+  .mod img { width: 72px; height: 72px; margin-top: 2px; }
+  .mod .t { font-size: 26px; font-weight: 700; color: var(--text); display: flex; align-items: center; height: 34px; }
+  .mod .t .dia { color: var(--c); margin-right: 12px; font-size: 22px; }
+  .mod .d { font-size: 17px; line-height: 26px; color: var(--dim); margin-top: 8px; min-height: 78px; }
+  .ver { display: inline-flex; align-items: center; height: 28px; padding: 0 10px; margin-top: 14px; font-size: 16px;
+         color: var(--ok); border: 1px solid var(--ver-line); border-radius: 6px; }
+  .foot { margin-top: 20px; display: flex; align-items: center; gap: 14px; font-size: 17px; color: var(--dimmer); }
+  .code { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid var(--chip-line); border-radius: 7px;
+          background: var(--card); color: var(--chip-text); font-size: 18px; }
+  .code b { color: var(--dimmer); font-weight: 500; margin-right: 10px; }
+</style></head>
+<body>
+<div id="sec" class="sec grid-bg">
+  <div class="head"><b>$</b>ls mods/<span class="r">3 mods</span></div>
+  <div class="cards">
+    <div class="mod" style="--c:var(--tripwire)"><img class="px" src="icons/tripwire.png" alt="">
+      <div><div class="t"><span class="dia">◆</span>tripwire</div>
+        <div class="d">Holds rm -rf, force push and hard reset; shows what they would destroy first.</div>
+        <span class="ver">v0.1.0</span></div></div>
+    <div class="mod" style="--c:var(--canopy)"><img class="px" src="icons/canopy.png" alt="">
+      <div><div class="t"><span class="dia">◆</span>canopy</div>
+        <div class="d">Your file tree beside the chat, lit by what Claude reads, edits and commits.</div>
+        <span class="ver">v0.1.0</span></div></div>
+    <div class="mod" style="--c:var(--crew)"><img class="px" src="icons/crew.png" alt="">
+      <div><div class="t"><span class="dia">◆</span>crew</div>
+        <div class="d">A live panel of every subagent Claude delegates to, with a pixel mascot each.</div>
+        <span class="ver">v0.1.1</span></div></div>
+  </div>
+  <div class="foot"><span class="code"><b>&gt;</b>/plugin marketplace add flaviorg/claude-mods</span></div>
+</div>
+</body></html>

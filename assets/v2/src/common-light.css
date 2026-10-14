@@ -1,0 +1,10 @@
+/* Light theme: loaded by each page's inline loader when the URL has ?theme=light.
+   Only overrides variables declared in common.css; the dark theme never loads this file. */
+:root {
+  --bg: #f6f6f3; --card: #ffffff; --card2: #fafaf8; --line: #d9d8d3; --line2: #e6e5e0;
+  --text: #1a1a1c; --dim: #6b6962; --dimmer: #8f8c84;
+  --coral: #c8603f; --teal: #1f9a92; --violet: #7a5ad9; --gold: #a87c12; --ok: #2f8f3f;
+  --chip-line: #cfcec8; --chip-text: #3d3b36; --bar-track: #e6e5e0; --guide: #c4c2bb; --ver-line: rgba(47,143,63,.45);
+  --tripwire: #d32f2f; --canopy: #3a9455; --crew: #7a5ad9; --sh-bg: #4a4a52; --sh-fg: #f0f0f0; --sh2-bg: #5c5a57; --sh2-fg: #f3efe6;
+  --grid: rgba(0,0,0,.05);
+}

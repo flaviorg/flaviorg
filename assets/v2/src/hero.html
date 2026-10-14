@@ -1,0 +1,154 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>flaviorg hero</title>
+<link rel="stylesheet" href="common.css"><script>/[?&]theme=light\b/.test(location.search)&&document.write('<link rel="stylesheet" href="common-light.css">')</script>
+<style>
+  #hero { width: 1600px; height: 620px; padding: 64px; display: grid; grid-template-columns: 840px 1fr; column-gap: 48px; }
+  .col { display: flex; flex-direction: column; }
+  .head { height: 40px; display: flex; align-items: center; font-size: 21px; letter-spacing: .02em; }
+  .eyebrow { color: var(--dim); }
+  .eyebrow .dia { color: var(--coral); margin-right: 10px; }
+
+  /* terminal */
+  .term { flex: 1; margin-top: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+          padding: 30px 36px; display: flex; flex-direction: column; justify-content: center; }
+  .term .p { font-size: 22px; color: var(--dim); }
+  .term .p b { color: var(--coral); font-weight: 600; margin-right: 12px; }
+  .name { font-size: 80px; font-weight: 700; letter-spacing: -.01em; line-height: 1; margin: 20px 0 20px; color: var(--text); }
+  .role { font-size: 27px; font-weight: 500; color: var(--text); }
+  .where { font-size: 22px; color: var(--dim); margin-top: 10px; }
+  .where i { font-style: normal; color: var(--dimmer); margin: 0 4px; }
+  .term .p.last { margin-top: 24px; }
+  .cursor { display: inline-block; width: 12px; height: 24px; background: var(--coral); vertical-align: -4px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  /* driven mode (window.__t): JS owns every moving part, CSS animation off */
+  .driven .cursor { animation: none; }
+
+  .chips { display: flex; gap: 12px; margin-top: 16px; }
+  .chip { font-size: 18px; padding: 0 15px; flex: 1 1 auto; justify-content: center; height: 44px; display: flex; align-items: center; border: 1px solid var(--chip-line);
+          border-radius: 7px; color: var(--chip-text); white-space: nowrap; }
+  .chip i { font-style: normal; color: var(--dimmer); margin: 0 6px; }
+  .chip.accent { border-color: var(--coral); color: var(--coral); }
+
+  /* crew pane */
+  .pane { flex: 1; margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+  .ptitle { color: var(--text); }
+  .ptitle .dia { color: var(--violet); margin-right: 10px; }
+  .ptitle .crew { color: var(--violet); }
+  .ptitle i { font-style: normal; color: var(--dimmer); margin: 0 10px; }
+  .ptitle .r { margin-left: auto; color: var(--dimmer); font-size: 17px; }
+  .ptitle .r b { color: var(--dim); font-weight: 500; }
+  .card { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 0 18px 0 14px;
+          display: grid; grid-template-columns: 72px 1fr; column-gap: 16px; align-items: center; }
+  .card .sprite { width: 72px; height: 64px; }
+  .card .t { display: flex; align-items: baseline; font-size: 22px; font-weight: 700; }
+  .card .t .k { margin-left: auto; font-size: 15px; font-weight: 500; color: var(--dimmer); }
+  .card .t .k b { font-weight: 500; }
+  .card .m { font-size: 16.5px; color: var(--dim); margin-top: 5px; white-space: nowrap; }
+  .card .m i { font-style: normal; color: var(--dimmer); margin: 0 1px; }
+  .bar { height: 3px; border-radius: 2px; background: var(--bar-track); margin-top: 11px; overflow: hidden; }
+  .bar > span { display: block; height: 100%; border-radius: 2px; background: var(--c); }
+</style></head>
+<body>
+<div id="hero" class="grid-bg">
+  <div class="col">
+    <div class="head eyebrow"><span class="dia">◆</span>flaviorg</div>
+    <div class="term">
+      <div class="p first"><b>&gt;</b><span class="typed">whoami</span></div>
+      <div class="name">Flavio Gouveia</div>
+      <div class="role">Senior Full-Stack &amp; AI Engineer</div>
+      <div class="where">TED.com and the TED app<i>·</i>Braga, Portugal</div>
+      <div class="p last"><b>&gt;</b><span class="cursor"></span></div>
+    </div>
+    <div class="chips">
+      <div class="chip accent">9+ years</div>
+      <div class="chip">React Native<i>·</i>Next.js<i>·</i>TypeScript<i>·</i>Node.js</div>
+      <div class="chip">Claude Code</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="head ptitle"><span class="dia">◆</span><span class="crew">crew</span><i>·</i>4 running<span class="r"><b>o:</b> open</span></div>
+    <div class="pane">
+      <div class="card" style="--c: var(--coral)">
+        <div class="sprite" data-sprite="general" data-frame="0"></div>
+        <div><div class="t">TED.com front end<span class="k" style="color:var(--coral)">general</span></div>
+          <div class="m">Next.js<i>·</i>React<i>·</i>GraphQL<i>·</i>20M+ visitors/mo</div>
+          <div class="bar"><span style="width:78%"></span></div></div>
+      </div>
+      <div class="card" style="--c: var(--teal)">
+        <div class="sprite" data-sprite="explore" data-frame="2"></div>
+        <div><div class="t">TED app<span class="k" style="color:var(--teal)">explore</span></div>
+          <div class="m">React Native<i>·</i>30M+ downloads</div>
+          <div class="bar"><span style="width:62%"></span></div></div>
+      </div>
+      <div class="card" style="--c: var(--violet)">
+        <div class="sprite" data-sprite="plan" data-frame="1"></div>
+        <div><div class="t">AI agents &amp; MCP servers<span class="k" style="color:var(--violet)">plan</span></div>
+          <div class="m">LangGraph<i>·</i>RAG<i>·</i>eval gates</div>
+          <div class="bar"><span style="width:45%"></span></div></div>
+      </div>
+      <div class="card" style="--c: var(--gold)">
+        <div class="sprite" data-sprite="custom" data-frame="3"></div>
+        <div><div class="t">Video with code<span class="k" style="color:var(--gold)">custom</span></div>
+          <div class="m">motion-studio<i>·</i>reelforge<i>·</i>ffmpeg</div>
+          <div class="bar"><span style="width:31%"></span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="sprites.js"></script>
+<script>
+  // Inline each crew mascot; data-frame freezes it on one working frame (FRAME_MS = 250 ms).
+  // Remove the pause to let the SMIL loop play when animating.
+  document.querySelectorAll('[data-sprite]').forEach((el) => {
+    el.innerHTML = window.SPRITES[el.dataset.sprite].svg
+    const svg = el.querySelector('svg')
+    if (!window.ANIMATE) { svg.pauseAnimations(); svg.setCurrentTime(+el.dataset.frame * 0.25 + 0.05) }
+  })
+
+  // Deterministic animation hook for hero-gif.mjs: __t(ms) sets the whole hero to time ms of a 6 s loop.
+  // Never called by render.mjs, so the static hero.png is unchanged.
+  window.LOOP = 6000
+  window.STILL_T = 3150 // full state; bars equal their static widths, cursor on
+  window.__t = (() => {
+    let ready = false, typed, word, cur1, out, last, cur2, bars, svgs
+    const setup = () => {
+      document.documentElement.classList.add('driven')
+      typed = document.querySelector('.term .first .typed')
+      word = typed.textContent
+      cur1 = document.createElement('span'); cur1.className = 'cursor'; cur1.style.marginLeft = '2px'
+      typed.after(cur1)
+      out = [...document.querySelectorAll('.term .name, .term .role, .term .where')]
+      last = document.querySelector('.term .p.last'); cur2 = last.querySelector('.cursor')
+      bars = [...document.querySelectorAll('.bar > span')].map((el) => ({ el, w: parseFloat(el.style.width) }))
+      svgs = [...document.querySelectorAll('[data-sprite]')].map((el) => ({ svg: el.querySelector('svg'), f: +el.dataset.frame }))
+      svgs.forEach((o) => o.svg.pauseAnimations())
+      ready = true
+    }
+    const TYPE0 = 300, STEP = 130, OUT = [1350, 1600, 1850], LAST = 2150, FADE = 5700, L = 6000
+    return (ms) => {
+      if (!ready) setup()
+      const t = ((ms % L) + L) % L
+      const fade = t >= FADE ? (t - FADE) / (L - FADE) : 0 // 0..1 clearing
+      const keep = 1 - fade
+      // line 1: typing
+      const n = t < TYPE0 ? 0 : Math.min(word.length, Math.floor((t - TYPE0) / STEP) + 1)
+      typed.textContent = word.slice(0, n) // one text node, so the full word shapes exactly as in the static
+      typed.style.opacity = keep
+      const typing = t >= TYPE0 && t < TYPE0 + STEP * word.length + 120
+      cur1.style.display = t < OUT[0] || fade ? '' : 'none'
+      cur1.style.opacity = fade ? fade : (typing || t % 1000 < 500 ? 1 : 0)
+      // output lines, then the new prompt with a blinking block
+      out.forEach((el, i) => { el.style.visibility = t >= OUT[i] ? 'visible' : 'hidden'; el.style.opacity = keep })
+      last.style.visibility = t >= LAST ? 'visible' : 'hidden'
+      last.style.opacity = keep
+      cur2.style.opacity = (t - LAST) % 1000 < 500 ? 1 : 0
+      // bars creep ~4% over the loop, ease back during the clear
+      const p = t < FADE ? t / FADE : 1 - fade // 0 -> 1 across the loop, back to 0 in the clear
+      bars.forEach(({ el, w }) => { el.style.width = (w + 4 * (p - STILL_T / FADE)) + '%' })
+      // mascots: SMIL working loop, each offset by its static frame
+      svgs.forEach(({ svg, f }) => svg.setCurrentTime(f * 0.25 + t / 1000 + 0.05))
+    }
+  })()
+</script>
+</body></html>

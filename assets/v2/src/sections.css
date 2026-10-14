@@ -1,0 +1,9 @@
+/* Shared by section-*.html (layers on common.css; hero values reused) */
+body { width: 1600px; }
+.sec { width: 1600px; padding: 48px 64px; }
+.head { height: 40px; display: flex; align-items: center; font-size: 21px; letter-spacing: .02em; color: var(--dim); }
+.head b { color: var(--coral); font-weight: 600; margin-right: 14px; }
+.head .r { margin-left: auto; color: var(--dimmer); font-size: 17px; }
+.box { margin-top: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+i.s { font-style: normal; color: var(--dimmer); margin: 0 10px; }
+.px { image-rendering: pixelated; display: block; }

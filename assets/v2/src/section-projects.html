@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>flaviorg projects</title>
+<link rel="stylesheet" href="common.css"><script>/[?&]theme=light\b/.test(location.search)&&document.write('<link rel="stylesheet" href="common-light.css">')</script><link rel="stylesheet" href="sections.css">
+<style>
+  .box { padding: 20px 32px 22px; }
+  .row { display: flex; align-items: center; height: 35px; font-size: 20px; white-space: nowrap; }
+  .ptitle { margin-bottom: 6px; }
+  .ptitle .dia { color: var(--canopy); margin-right: 12px; }
+  .ptitle .cn { color: var(--canopy); }
+  .ptitle .ok, .ck { color: var(--ok); }
+  .g { color: var(--guide); white-space: pre; }
+  .tw { color: var(--dimmer); margin-right: 10px; font-size: 15px; }
+  .dir { font-weight: 700; color: var(--text); }
+  .badge { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 26px; border-radius: 5px;
+           font-size: 14px; font-weight: 800; margin-right: 12px; letter-spacing: -.02em; }
+  .TS { background: #3178C6; color: #fff; } .JS { background: #F0DB4F; color: #1a1a1a; }
+  .PY { background: #3776AB; color: #FFD43B; } .SH { background: var(--sh-bg); color: var(--sh-fg); }
+  .name { width: 300px; color: var(--ok); }
+  .desc { color: var(--dim); font-size: 18px; }
+  .ck { margin-left: auto; font-size: 20px; }
+</style></head>
+<body>
+<div id="sec" class="sec grid-bg">
+  <div class="head"><b>$</b>canopy projects/</div>
+  <div class="box" id="tree"></div>
+</div>
+<script>
+  const P = [
+    ['ai-engineering', [
+      ['TS','incident-copilot','Multi-agent incident copilot: the model proposes, humans decide'],
+      ['TS','agent-flight-recorder','Black box for AI agents: record, replay, diff and fork runs'],
+      ['TS','legacy-archaeologist','Characterization tests for legacy JS, scored by mutation'],
+      ['TS','secure-legacy-mcp','Turns a legacy API into a secure MCP server: RBAC, rate limits'],
+      ['TS','docs-data-assistant','RAG with citations or validated Text-to-SQL, behind an eval gate'],
+      ['SH','maestri-squad','One Markdown file that makes Maestri lead a multi-agent squad'],
+    ]],
+    ['video', [
+      ['JS','motion-studio','Motion graphics videos made by Claude Code, brief to MP4'],
+      ['PY','reelforge','Claude Code skills that cut a raw take into a branded short'],
+    ]],
+  ]
+  const n = P.reduce((a, [, k]) => a + k.length, 0)
+  let h = `<div class="row ptitle"><span class="dia">◆</span><span class="cn">canopy</span><i class="s">·</i>main<i class="s">·</i><span class="ok">✓ ${n}</span></div>`
+  h += `<div class="row"><span class="tw">▾</span><span class="dir">projects/</span></div>`
+  P.forEach(([dir, kids], di) => {
+    const lastDir = di === P.length - 1
+    h += `<div class="row"><span class="g">${lastDir ? '└─ ' : '├─ '}</span><span class="tw">▾</span><span class="dir">${dir}/</span></div>`
+    kids.forEach(([b, name, d], ki) => {
+      const g = (lastDir ? '   ' : '│  ') + (ki === kids.length - 1 ? '└─ ' : '├─ ')
+      h += `<div class="row"><span class="g">${g}</span><span class="badge ${b}">${b}</span><span class="name">${name}</span><span class="desc">${d}</span><span class="ck">✓</span></div>`
+    })
+  })
+  document.getElementById('tree').innerHTML = h
+</script>
+</body></html>
